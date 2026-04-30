@@ -1,0 +1,114 @@
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+⨯ ./app/page.tsx
+Error:   x Expected '</', got 'jsx text'
+     ,-[C:\Users\Lenovo\Downloads\b_pRAyLRHq70j (1)\app\page.tsx:205:1]
+ 202 |                               <p className="text-sm leading-6 text-muted-foreground">
+ 203 |                                 A steadier entry point for people who want order before action.
+ 204 |                               </p>
+ 205 | ,->                         </p>
+ 206 | `->                       </div>
+ 207 |                         </div>
+ 208 |                       </div>
+ 209 |                     </FadeInView>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+⨯ ./app/page.tsx
+Error:   x Expected '</', got 'jsx text'
+     ,-[C:\Users\Lenovo\Downloads\b_pRAyLRHq70j (1)\app\page.tsx:205:1]
+ 202 |                               <p className="text-sm leading-6 text-muted-foreground">
+ 203 |                                 A steadier entry point for people who want order before action.
+ 204 |                               </p>
+ 205 | ,->                         </p>
+ 206 | `->                       </div>
+ 207 |                         </div>
+ 208 |                       </div>
+ 209 |                     </FadeInView>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.2.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Expected '</', got 'jsx text'
+     ,-[C:\Users\Lenovo\Downloads\b_pRAyLRHq70j (1)\app\page.tsx:205:1]
+ 202 |                               <p className="text-sm leading-6 text-muted-foreground">
+ 203 |                                 A steadier entry point for people who want order before action.
+ 204 |                               </p>
+ 205 | ,->                         </p>
+ 206 | `->                       </div>
+ 207 |                         </div>
+ 208 |                       </div>
+ 209 |                     </FadeInView>
+     `----
+
+
+Caused by:
+    Syntax Error
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.2.4_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Expected '</', got 'jsx text'
+     ,-[C:\Users\Lenovo\Downloads\b_pRAyLRHq70j (1)\app\page.tsx:205:1]
+ 202 |                               <p className="text-sm leading-6 text-muted-foreground">
+ 203 |                                 A steadier entry point for people who want order before action.
+ 204 |                               </p>
+ 205 | ,->                         </p>
+ 206 | `->                       </div>
+ 207 |                         </div>
+ 208 |                       </div>
+ 209 |                     </FadeInView>
+     `----
+
+
+Caused by:
+    Syntax Error
+[browser] ./app/page.tsx
+Error:   x Expected '</', got 'jsx text'
+     ,-[C:\Users\Lenovo\Downloads\b_pRAyLRHq70j (1)\app\page.tsx:205:1]
+ 202 |                               <p className="text-sm leading-6 text-muted-foreground">
+ 203 |                                 A steadier entry point for people who want order before action.
+ 204 |                               </p>
+ 205 | ,->                         </p>
+ 206 | `->                       </div>
+ 207 |                         </div>
+ 208 |                       </div>
+ 209 |                     </FadeInView>
+     `----
+
+Caused by:
+    Syntax Error 
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+Error: Route "/guides/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at GuideDetailPage (app\guides\[slug]\page.tsx:28:39)
+  26 |
+  27 | export default function GuideDetailPage({ params }: { params: { slug: string } }) {
+> 28 |   const guide = getGuideBySlug(params.slug)
+     |                                       ^
+  29 |
+  30 |   if (!guide) {
+  31 |     notFound()
+Error: Route "/guides/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at Module.generateMetadata (app\guides\[slug]\page.tsx:17:39)
+    at eval (..\..\..\src\lib\metadata\resolve-metadata.ts:541:21)
+    at Object.assign.$$original (..\..\..\src\lib\metadata\resolve-metadata.ts:533:21)
+    at getResult (..\..\..\src\lib\metadata\resolve-metadata.ts:1102:18)
+    at prerenderMetadata (..\..\..\src\lib\metadata\resolve-metadata.ts:1046:5)
+    at accumulateMetadata (..\..\..\src\lib\metadata\resolve-metadata.ts:1165:31)
+    at resolveMetadata (..\..\..\src\lib\metadata\resolve-metadata.ts:1309:10)
+  15 |
+  16 | export function generateMetadata({ params }: { params: { slug: string } }) {
+> 17 |   const guide = getGuideBySlug(params.slug)
+     |                                       ^
+  18 |
+  19 |   if (!guide) return {}
+  20 |
