@@ -412,6 +412,105 @@
   gap: 1rem;
 }
 
+@media (max-width: 639px) {
+  .hero-shell {
+    border-radius: 1.35rem;
+    padding: 1.5rem;
+  }
+
+  .hero-shell h1 {
+    font-size: 2.65rem;
+    line-height: 1.03;
+    overflow-wrap: break-word;
+  }
+
+  .hero-shell p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .section-label {
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
+    line-height: 1.35;
+  }
+
+  .hero-step-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .hero-step-pill {
+    width: 100%;
+    align-items: flex-start;
+    border-radius: 1rem;
+    padding: 0.75rem 0.85rem;
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .hero-step-index {
+    height: 1.65rem;
+    width: 1.65rem;
+    flex: 0 0 auto;
+  }
+
+  .hero-visual-card {
+    grid-template-rows: auto;
+  }
+
+  .hero-visual-image-wrap {
+    min-height: 16rem;
+    border-radius: 1.25rem;
+  }
+
+  .hero-visual-copy {
+    padding: 1rem;
+  }
+
+  .ticker-track {
+    gap: 1.6rem;
+    animation-duration: 22s;
+  }
+
+  .ticker-item {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+  }
+
+  .soft-panel {
+    border-radius: 0.9rem;
+  }
+
+  .jobs-card,
+  .jobs-skeleton-card {
+    min-height: auto;
+  }
+
+  .jobs-toolbar {
+    border-radius: 1.15rem;
+  }
+
+  .jobs-filter-pill {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .jobs-stat-row {
+    align-items: flex-start;
+  }
+
+  .calculator-result-value {
+    font-size: clamp(2.25rem, 12vw, 3.2rem);
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+}
+
 @media (min-width: 640px) {
   .hero-aside-footer {
     grid-template-columns: 1fr 1fr;

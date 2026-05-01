@@ -181,10 +181,10 @@ export default function JobsPage() {
       <Header />
 
       <main className="flex-1 pt-16">
-        <section className="px-4 py-14 lg:px-8 lg:py-20">
+        <section className="px-4 py-12 sm:py-14 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-7xl">
             <FadeIn>
-              <div className="jobs-hero hero-shell hero-noise relative overflow-hidden rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10">
+              <div className="jobs-hero hero-shell hero-noise relative overflow-hidden rounded-[1.35rem] px-5 py-7 sm:rounded-[2rem] sm:px-8 lg:px-10">
                 <div className="jobs-hero-glow" />
                 <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_320px] lg:items-end">
                   <div>
@@ -192,10 +192,10 @@ export default function JobsPage() {
                       <Sparkles className="h-4 w-4" />
                       Live South Africa opportunity board
                     </Badge>
-                    <h1 className="max-w-3xl text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
+                    <h1 className="max-w-3xl text-[2.65rem] font-semibold leading-[1.03] tracking-tight sm:text-6xl sm:leading-tight lg:text-7xl">
                       Find work that feels <span className="gradient-text">worth opening</span>
                     </h1>
-                    <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
+                    <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-xl sm:leading-8">
                       Live Adzuna roles, clearer fit signals, and a job brief that actually helps you decide whether to
                       apply.
                     </p>
@@ -305,7 +305,7 @@ export default function JobsPage() {
                 <div className="mb-7 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                   <div>
                     <p className="text-sm uppercase tracking-[0.22em] text-muted-foreground">Current window</p>
-                    <h2 className="mt-2 text-3xl font-semibold text-foreground">A more curated feeling job stream</h2>
+                    <h2 className="mt-2 text-2xl font-semibold text-foreground sm:text-3xl">A more curated feeling job stream</h2>
                   </div>
                   <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                     <Badge variant="secondary" className="rounded-full px-4 py-2">
@@ -327,13 +327,13 @@ export default function JobsPage() {
                         <Link href={`/jobs/${job.id}`} className="block" onClick={() => cacheJobs([job])}>
                           <Card className="jobs-card group relative h-full overflow-hidden rounded-[1.75rem] border-0 p-0">
                             <div className={`jobs-card-aura bg-gradient-to-br ${getJobTone(index)}`} />
-                            <div className="relative flex h-full flex-col p-6">
+                            <div className="relative flex h-full flex-col p-5 sm:p-6">
                               <div className="flex items-start justify-between gap-4">
                                 <div>
                                   <Badge className="jobs-chip mb-4 border-0 px-3 py-1.5 text-xs">
                                     {getJobSignal(job)}
                                   </Badge>
-                                  <h3 className="max-w-[18ch] text-2xl font-semibold leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-1">
+                                  <h3 className="max-w-[18ch] text-xl font-semibold leading-tight text-foreground transition-transform duration-300 group-hover:translate-x-1 sm:text-2xl">
                                     {job.title}
                                   </h3>
                                 </div>
@@ -377,7 +377,7 @@ export default function JobsPage() {
                                 </div>
                               </div>
 
-                              <div className="mt-6 flex items-center justify-between border-t border-border/60 pt-5">
+                              <div className="mt-6 flex flex-col gap-2 border-t border-border/60 pt-5 sm:flex-row sm:items-center sm:justify-between">
                                 <span className="text-sm font-medium text-foreground">Open role brief</span>
                                 <span className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Full page</span>
                               </div>

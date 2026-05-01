@@ -64,7 +64,7 @@ export default function CalculatorPage() {
       
       <main className="flex-1 pt-16">
         {/* Page Header */}
-        <section className="relative overflow-hidden px-4 py-20 lg:px-8 lg:py-28">
+        <section className="relative overflow-hidden px-4 py-14 sm:py-20 lg:px-8 lg:py-28">
           <div className="absolute inset-0 -z-10">
             <MorphingBlob className="left-1/4 top-1/4 h-[400px] w-[400px]" color="primary" />
             <MorphingBlob className="right-1/4 bottom-1/4 h-[500px] w-[500px]" color="accent" />
@@ -89,7 +89,7 @@ export default function CalculatorPage() {
         </section>
 
         {/* Calculator Section */}
-        <section className="px-4 py-12 lg:px-8 lg:py-16">
+        <section className="px-4 py-10 sm:py-12 lg:px-8 lg:py-16">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-8 lg:grid-cols-2">
               {/* Input Controls */}
@@ -110,7 +110,7 @@ export default function CalculatorPage() {
                     <CardContent className="space-y-8">
                       {/* Hours per day */}
                       <div className="space-y-4">
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                           <label className="text-sm font-medium text-foreground">
                             Hours per day
                           </label>
@@ -134,7 +134,7 @@ export default function CalculatorPage() {
 
                       {/* Days per week */}
                       <div className="space-y-4">
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                           <label className="text-sm font-medium text-foreground">
                             Days per week
                           </label>
@@ -216,14 +216,14 @@ export default function CalculatorPage() {
                 <div className="space-y-6">
                   {/* Main Result Card */}
                   <Card className="section-shell overflow-hidden border-0 shadow-2xl">
-                    <div className="relative bg-gradient-to-br from-foreground to-foreground/90 p-8 lg:p-10 text-background overflow-hidden">
+                    <div className="relative overflow-hidden bg-gradient-to-br from-foreground to-foreground/90 p-5 text-background sm:p-8 lg:p-10">
                       <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-primary/30 to-transparent" />
                       <div className="absolute right-0 bottom-0 h-full w-1/3 bg-gradient-to-l from-accent/30 to-transparent" />
                       <div className="absolute left-10 top-10 h-32 w-32 rounded-full bg-primary/20 blur-3xl" />
                       <div className="absolute right-10 bottom-10 h-24 w-24 rounded-full bg-accent/20 blur-3xl" />
                       <div className="relative">
                         <p className="text-sm font-medium text-background/70">Estimated Monthly Gross</p>
-                        <p className="mt-2 text-5xl font-bold sm:text-6xl">
+                        <p className="calculator-result-value mt-2 text-5xl font-bold sm:text-6xl">
                           {formatCurrency(calculations.monthlyIncome)}
                         </p>
                         <p className="mt-3 text-sm text-background/60">
@@ -231,7 +231,7 @@ export default function CalculatorPage() {
                         </p>
                       </div>
                     </div>
-                    <CardContent className="p-6">
+                    <CardContent className="p-5 sm:p-6">
                       <div className="grid gap-6 sm:grid-cols-3">
                         {[
                           { icon: DollarSign, value: formatCurrency(calculations.hourlyRate), label: 'Est. Hourly Rate' },
@@ -242,7 +242,7 @@ export default function CalculatorPage() {
                             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 mx-auto">
                               <stat.icon className="h-6 w-6 text-primary" />
                             </div>
-                            <p className="mt-3 text-2xl font-bold text-foreground">
+                            <p className="mt-3 text-xl font-bold text-foreground sm:text-2xl">
                               {stat.value}
                             </p>
                             <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
@@ -259,19 +259,19 @@ export default function CalculatorPage() {
                         <CardDescription>More realistic cash-flow view after fees and a tax buffer.</CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-3 text-sm">
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                           <span className="text-muted-foreground">Platform fees</span>
                           <span className="font-semibold text-foreground">{formatCurrency(calculations.platformFees)}</span>
                         </div>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                           <span className="text-muted-foreground">After platform fees</span>
                           <span className="font-semibold text-foreground">{formatCurrency(calculations.netAfterFees)}</span>
                         </div>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                           <span className="text-muted-foreground">Suggested tax reserve</span>
                           <span className="font-semibold text-foreground">{formatCurrency(calculations.suggestedTaxReserve)}</span>
                         </div>
-                        <div className="flex items-center justify-between border-t border-border pt-3">
+                        <div className="flex flex-col gap-1 border-t border-border pt-3 sm:flex-row sm:items-center sm:justify-between">
                           <span className="font-medium text-foreground">Estimated spendable amount</span>
                           <span className="font-bold text-primary">{formatCurrency(calculations.netAfterReserve)}</span>
                         </div>
@@ -384,7 +384,7 @@ export default function CalculatorPage() {
         </section>
 
         {/* SA Availability Checker */}
-        <section className="relative overflow-hidden px-4 py-20 lg:px-8 lg:py-24">
+        <section className="relative overflow-hidden px-4 py-14 sm:py-20 lg:px-8 lg:py-24">
           <div className="absolute inset-0 mesh-gradient -z-10" />
           <div className="mx-auto max-w-7xl">
             <FadeInView>

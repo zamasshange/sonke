@@ -37,7 +37,7 @@ export default function GuidesPage() {
       <Header />
 
       <main className="flex-1 pt-16">
-        <section className="relative overflow-hidden px-4 py-20 lg:px-8 lg:py-28">
+        <section className="relative overflow-hidden px-4 py-14 sm:py-20 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-7xl">
             <FadeIn>
               <div className="hero-shell max-w-5xl rounded-[2rem] px-6 py-10 sm:px-8 lg:px-12">
@@ -48,7 +48,7 @@ export default function GuidesPage() {
                 <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
                   Real <span className="gradient-text">money guides</span>
                 </h1>
-                <p className="mt-6 max-w-2xl text-xl leading-relaxed text-muted-foreground">
+                <p className="mt-6 max-w-2xl text-base leading-7 text-muted-foreground sm:text-xl sm:leading-relaxed">
                   Practical South African guides with realistic earnings, payout methods, mistakes to avoid, and step-by-step action plans.
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function GuidesPage() {
                           {guide.timeToFirstEarning}
                         </Badge>
                       </div>
-                      <CardTitle className="text-2xl">{guide.title}</CardTitle>
+                      <CardTitle className="text-xl sm:text-2xl">{guide.title}</CardTitle>
                       <CardDescription className="mt-3 text-base leading-7">
                         {guide.overview}
                       </CardDescription>

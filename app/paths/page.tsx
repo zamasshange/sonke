@@ -20,7 +20,7 @@ export default function PathsPage() {
       <Header />
 
       <main className="flex-1 pt-16">
-        <section className="px-4 py-20 lg:px-8 lg:py-28">
+        <section className="px-4 py-14 sm:py-20 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-7xl">
             <FadeIn>
               <div className="hero-shell max-w-5xl rounded-[2rem] px-6 py-10 sm:px-8 lg:px-12">
@@ -31,7 +31,7 @@ export default function PathsPage() {
                 <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
                   Choose a <span className="gradient-text">path</span>
                 </h1>
-                <p className="mt-6 max-w-2xl text-xl leading-relaxed text-muted-foreground">
+                <p className="mt-6 max-w-2xl text-base leading-7 text-muted-foreground sm:text-xl sm:leading-relaxed">
                   Paths connect guides, tools, and jobs into ordered journeys so you know what to do first, second, and next.
                 </p>
               </div>
@@ -39,20 +39,20 @@ export default function PathsPage() {
           </div>
         </section>
 
-        <section className="px-4 pb-20 lg:px-8 lg:pb-28">
+        <section className="px-4 pb-14 sm:pb-20 lg:px-8 lg:pb-28">
           <div className="mx-auto max-w-7xl">
             <StaggerContainer className="grid gap-8 lg:grid-cols-2">
               {paths.map((path) => (
                 <StaggerItem key={path.title}>
                   <Card className="section-shell h-full border-border/60 bg-card/80">
                     <CardHeader>
-                      <CardTitle className="text-3xl">{path.title}</CardTitle>
+                      <CardTitle className="text-2xl sm:text-3xl">{path.title}</CardTitle>
                       <CardDescription className="text-base leading-7">{path.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ol className="space-y-4">
                         {path.steps.map((step, index) => (
-                          <li key={step.title} className="flex gap-4 rounded-xl border border-border/60 bg-background/70 p-4">
+                          <li key={step.title} className="flex gap-3 rounded-xl border border-border/60 bg-background/70 p-4 sm:gap-4">
                             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground">
                               {index + 1}
                             </span>
